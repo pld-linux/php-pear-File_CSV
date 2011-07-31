@@ -1,19 +1,19 @@
+%define		status		alpha
+%define		pearname	File_CSV
 %include	/usr/lib/rpm/macros.php
-%define		_status		alpha
-%define		_pearname	File_CSV
-%define		subver	alpha1
-%define		rel		1
-Summary:	%{_pearname} - Read and write of CSV files
-Name:		php-pear-%{_pearname}
+Summary:	%{pearname} - Read and write of CSV files
+Name:		php-pear-%{pearname}
 Version:	1.0.0
-Release:	0.%{subver}.%{rel}
+Release:	1
 License:	New BSD
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
-# Source0-md5:	a941ef2ec81cfc47a8f6d9290cb9d0af
+Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
+# Source0-md5:	a3899032d51cee860a2008e8b294c885
 URL:		http://pear.php.net/package/File_CSV/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.7.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+BuildRequires:	rpmbuild(macros) >= 1.580
+Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-File >= 1.4.0-0.alpha1
 Requires:	php-pear-PEAR-core >= 1:1.7.0
@@ -29,7 +29,7 @@ Supports headers and is excel compatible, i.e. ="0004" outputs as 0004
 
 For more information on CSV: <http://rfc.net/rfc4180.html>
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %prep
 %pear_package_setup
