@@ -4,7 +4,7 @@
 Summary:	%{pearname} - Read and write of CSV files
 Name:		php-pear-%{pearname}
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
@@ -13,7 +13,7 @@ URL:		http://pear.php.net/package/File_CSV/
 BuildRequires:	php-pear-PEAR >= 1:1.7.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
-Requires:	php-pcre
+Requires:	php(pcre)
 Requires:	php-pear
 Requires:	php-pear-File >= 1.4.0-0.alpha1
 Requires:	php-pear-PEAR-core >= 1:1.7.0
