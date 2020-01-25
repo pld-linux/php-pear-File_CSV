@@ -1,6 +1,5 @@
 %define		status		alpha
 %define		pearname	File_CSV
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Read and write of CSV files
 Name:		php-pear-%{pearname}
 Version:	1.0.0
